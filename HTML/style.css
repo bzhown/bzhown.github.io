@@ -1,0 +1,162 @@
+/* Réinitialisation des marges et padding */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background: #eee;
+    font-style: normal;
+    border: none;
+}
+
+/* Conteneur principal pour header avec boutons */
+.container-header {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    box-shadow: 0 4px 2px -2px gray;
+    background-color: #f0f0f0;
+}
+
+/* Boutons à gauche et à droite positionnés avec absolute */
+#services, #projets, #forum {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.8s;
+    position: absolute;
+    top: 30px;
+}
+
+#services {
+    left: 0px; /* Aligné à gauche */
+}
+
+#projets {
+    left: 110px; /* Spacement par rapport au premier bouton */
+}
+
+#forum {
+    left: 220px; /* Spacement par rapport au deuxième bouton */
+}
+
+/* Boutons à droite */
+#contacter {
+    right: 110px; /* Positionné à droite */
+    top: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.8s;
+    position: absolute;
+}
+
+#contacter:hover {
+    background-color: blueviolet;
+}
+
+/* Ajout d'une icône de profil à droite */
+#profilepic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px; /* Aligné à droite */
+    top: 15px;
+    transition: background-color 0.8s;
+}
+
+#profilepic:hover {
+    background-color: #a8a0a0;
+}
+
+/* Effets hover pour boutons */
+#services:hover {
+    background-color: brown;
+}
+
+#projets:hover {
+    background-color: blue;
+}
+
+#forum:hover {
+    background-color: darkkhaki;
+}
+
+.box {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 3px 4px 3px darkblue;
+    background-color: transparent;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.box2 {
+    margin: 0 auto;
+    background-color: #eee;
+    width: 50%;
+    height: 900px;
+    box-shadow: 3px 4px 3px lightblue;
+}
+
+#OK {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#OK:hover {
+    background-color: #7e7373;
+}
+
+label {
+    font-size: 20px;
+}
+
+.shop {
+    width: 500px;
+    height: 80px;
+    background-color: #f8f3f3;
+    margin: 50px auto; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
+}
+
+#subsurf, #subcom, #subskate {
+    display: inline-block;
+    padding: 0;
+    margin: 0 10px; /* Espacement entre les sous-éléments */
+}
+
+/* Responsive pour mobile et tablettes */
+@media screen and (max-width: 768px) {
+    .container-header {
+        height: auto;
+    }
+
+    #services, #projets, #forum, #contacter, #profilepic {
+        position: static;
+        margin: 5px auto;
+        display: block;
+    }
+
+    .box2 {
+        width: 80%; /* Réduit la largeur de box2 pour les petits écrans */
+    }
+
+    .shop {
+        width: 90%; /* Adapte la boutique pour les petits écrans */
+    }
+}
+
+#title1{
+}
